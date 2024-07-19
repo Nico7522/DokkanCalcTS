@@ -1,0 +1,33 @@
+
+body {
+  background-color: rgb(37, 35, 35)!important;
+  height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.defense-form {
+    margin: 25px auto;
+    width: 80%;
+    padding: 50px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.absolute {
+position: absolute;
+right: 20px;
+top: 20px;
+padding: 10px;
+ }
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokkan Calculc Helper</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="title">DOKKAN Clalcul Helper</h1>
+
+    <div class="container">
+      <fieldset class="border rounded-3 p-3 guard-reduction-fieldset">
+        <legend class="float-none w-auto px-3 text-white">
+          Calcul Défense totale
+        </legend>
+        <div class="row">
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control defense-before-attack"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Défense avant spe</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control passif-multiplier"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Multiplicateur du passif</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control attack-multiplier"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Multiplicateur sur la spe</label>
+            </div>
+          </div>
+          <div class="col mt-1 text-center">
+            <button class="btn btn-lg btn-primary btn-defense-submit">
+              Calculer
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="defense-result text-white"></h4>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="container">
+      <fieldset class="border rounded-3 p-3 guard-reduction-fieldset">
+        <legend class="float-none w-auto px-3 text-white">
+          Calcul avec la Garde et/ou Réduction
+        </legend>
+        <div class="row">
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control boss-damage"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Dégâts du Boss</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control variance"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Variance</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control type-multiplier"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Type Multiplier</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control reduction"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Réduction</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control defense"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Défense</label>
+            </div>
+          </div>
+          <div class="col-lg text-center">
+            <div class="form-floating">
+              <input
+                type="number"
+                class="form-control guard-multiplier"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Guarde Multiplier</label>
+            </div>
+          </div>
+          <div class="col-lg mt-1 text-center">
+            <button class="btn btn-lg btn-primary btn-gard-submit">
+              Calculer
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="guard-reduction-result text-white"></h4>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
