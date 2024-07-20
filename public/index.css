@@ -31,3 +31,14 @@ top: 20px;
 padding: 10px;
  }
 
+ .normal-guard-table {
+  margin: 70px auto;
+ }
+ 
+ .passive-guard-table {
+  margin: auto;
+ }
+ .normal-guard-table, .passive-guard-table {
+  width: 70%;
+
+ }
