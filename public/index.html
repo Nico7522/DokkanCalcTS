@@ -73,7 +73,7 @@
         <legend class="float-none w-auto px-3 text-white">
           Calcul avec la Garde et/ou Réduction
         </legend>
-        <div class="row">
+        <div class="row mb-2">
           <div class="col-lg text-center">
             <div class="form-floating">
               <input
@@ -96,17 +96,63 @@
               <label for="floatingInput">Variance</label>
             </div>
           </div>
+        </div>
+        <div class="row mb-2">
           <div class="col-lg text-center">
-            <div class="form-floating">
-              <input
-                type="number"
-                class="form-control type-multiplier"
-                id="floatingInput"
-                placeholder=""
-              />
-              <label for="floatingInput">Type Multiplier</label>
-            </div>
+            <select
+              class="form-select form-select-lg boss-class"
+              aria-label="Default select example"
+            >
+              <option selected>Classe du Boss</option>
+              <option value="extreme">Extrême</option>
+              <option value="super">Super</option>
+            </select>
           </div>
+          <div class="col-lg text-center">
+            <select
+              class="form-select form-select-lg char-class"
+              aria-label="Default select example"
+            >
+              <option selected>Classe du Personnage</option>
+              <option value="extreme">Extrême</option>
+              <option value="super">Super</option>
+            </select>
+          </div>
+          <div class="col-lg text-center">
+            <select
+              class="form-select form-select-lg boss-type"
+              aria-label="Default select example"
+            >
+              <option selected>Type du Boss</option>
+              <option value="AGI">AGI</option>
+              <option value="INT">INT</option>
+              <option value="TEC">TEC</option>
+              <option value="END">END</option>
+              <option value="PUI">PUI</option>
+            </select>
+          </div>
+          <div class="col-lg text-center">
+            <select
+              class="form-select form-select-lg char-type"
+              aria-label="Default select example"
+            >
+              <option selected>Type du Personnage</option>
+              <option value="AGI">AGI</option>
+              <option value="INT">INT</option>
+              <option value="TEC">TEC</option>
+              <option value="END">END</option>
+              <option value="PUI">PUI</option>
+            </select>
+          </div>
+            <div class="form-check col-lg text-center text-white">
+              <input class="form-check-input passif-guard" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Guarde dans le Passif ?
+              </label>
+
+          </div>
+        </div>
+        <div class="row mb-2">
           <div class="col-lg text-center">
             <div class="form-floating">
               <input
@@ -129,17 +175,8 @@
               <label for="floatingInput">Défense</label>
             </div>
           </div>
-          <div class="col-lg text-center">
-            <div class="form-floating">
-              <input
-                type="number"
-                class="form-control guard-multiplier"
-                id="floatingInput"
-                placeholder=""
-              />
-              <label for="floatingInput">Guarde Multiplier</label>
-            </div>
-          </div>
+        </div>
+
           <div class="col-lg mt-1 text-center">
             <button class="btn btn-lg btn-primary btn-gard-submit">
               Calculer
@@ -263,6 +300,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
